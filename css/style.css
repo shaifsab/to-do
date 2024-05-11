@@ -1,0 +1,288 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* common css start */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #172E6A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+:root {
+    --icon-bg: invert(40%) sepia(0%) saturate(10%) hue-rotate(256deg) brightness(92%) contrast(82%);
+    --icon-bg-hover: invert(100%) sepia(94%) saturate(22%) hue-rotate(318deg) brightness(104%) contrast(107%);
+}
+
+/* common css end */
+
+/* app part start */
+.app {
+    width: 600px;
+    height: 763px;
+    box-sizing: border-box;
+
+}
+
+/* app part end */
+
+/* my day start */
+.day {
+    width: 100%;
+    height: 50px;
+    background: #1A120B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.day h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 14px;
+}
+
+.day a img {
+    width: 23px;
+    height: 23px;
+    filter: var(--icon-bg);
+    transform: rotate(90deg);
+    margin-right: 26px;
+    transition: all linear .1s;
+}
+
+.day a img:active {
+    filter: var(--icon-bg-hover);
+}
+
+/* my day end */
+
+/* task start */
+
+/* task-text start */
+.task {
+    margin-top: 19px;
+    width: 600px;
+    height: 694px;
+    background: #1A120B;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.task-text {
+    width: 572px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: flex-start;
+    border-radius: 10px;
+    margin: 15px 14px;
+    position: relative;
+}
+
+.task-text:hover {
+    background: #232323;
+}
+
+.task-text a img {
+    width: 17px;
+    height: 17px;
+    filter: var(--icon-bg);
+    margin: 0 9px 0 12px;
+}
+
+.task-text--font {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 9px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.dots {
+    position: relative;
+    margin-left: auto;
+}
+
+.dots:active {
+    filter: var(--icon-bg-hover);
+}
+
+.button-div {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+
+.edit-button {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 50px;
+    color: #ffffff;
+    background: #252525;
+    border: none;
+    outline: none;
+    transition: all linear .2s;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.edit-button:hover {
+    color: #afafaf;
+    background: #222831
+}
+
+.edit-button:active {
+    background: #31304D;
+}
+
+.delete-button {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 50px;
+    color: #ffffff;
+    background: #252525;
+    border: none;
+    outline: none;
+    transition: all linear .2s;
+    border-radius: 0 10px 10px 0;
+}
+
+.delete-button:hover {
+    color: #afafaf;
+    background: #222831;
+}
+
+.delete-button:active {
+    background: #31304D;
+}
+
+
+.round-link:active {
+    filter: var(--icon-bg-hover);
+}
+
+/* task-text end */
+/* task-add start */
+.task-add {
+    position: absolute;
+    bottom: 0px;
+    background: #252525;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+}
+
+.task-add--input {
+    width: 545px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666565;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+/* option section ekono
+kaz kori nai free
+ time eita ses korbo */
+
+
+
+
+
+/* option start */
+.option {
+    position: absolute;
+    bottom: 0px;
+    width: 600px;
+    height: 64px;
+    background: #252525;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    z-index: 1;
+
+}
+
+.option p {
+    font: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+    color: #666565;
+    margin-left: 26.5px;
+}
+
+.option-image {
+    display: flex;
+    justify-content: flex-end;
+    gap: 39px;
+    margin-right: 26.5px;
+}
+
+.option a img {
+    height: 14px;
+    width: 14px;
+    filter: var(--icon-bg);
+    transition: all linear .2s;
+}
+
+.option a img:hover {
+    filter: var(--icon-bg-hover);
+}
+
+/* option end */
